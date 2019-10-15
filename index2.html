@@ -1,0 +1,207 @@
+<!--
+         Email:utsav_patel@student.uml.edu
+           Name: Utsav Patel
+           I am a junior/senoir at Umass Lowell in  91.61 GUI Programming I
+
+           File: weblab.cs.uml.edu/~upatel
+           91.461 Assignment:  Creating Your First Web Page
+           Utsav Patel, UMass Lowell Computer Science, upatel@cs.uml.edu
+           Copyright (c) 2019 by Utsav Patel.  All rights reserved.  May be
+           freely copied or excerpted for educational purposes with credit to
+           the author.
+           updated by UP on October 9th, 2019 at 9:23 AM
+           This website was checked using validator.nu which provided no errors
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="index.css" rel="stylesheet">
+<title>Welcome</title>
+</head>
+
+<!-- This is the feature to add background color to the page -->
+<body>
+<div class="header">
+<h1>Introduction</h1>
+</div>
+
+<!-- This will lead the user to a link to vist -->
+<div  class="tabcontent">
+<p><a href="https://cs.uml.edu/~upatel/index.html">
+  Assignment 1</a>
+  <a href="https://cs.uml.edu/~upatel/index11.html">
+    Assignment 2</a>
+    <a href="https://cs.uml.edu/~upatel/index2.html">
+      Assignment 3</a>
+      <a href="https://cs.uml.edu/~upatel/index3.html">
+        Assignment 4</a>
+        <a href="https://cs.uml.edu/~upatel/index4.html">
+          Assignment 5</a>
+          <a href="https://cs.uml.edu/~upatel/index5.html">
+            Assignment 6</a>
+            <a href="https://cs.uml.edu/~upatel/index6.html">
+              Assignment 7</a>
+    </p>
+</div>
+
+
+
+<!-- This will insert the image -->
+<div class="row">
+ <div class="column">
+
+<img
+src="IMG_0424.JPG" alt="My picture"
+ width="200" height="200">
+</div>
+</div>
+
+
+ <div class="image">
+<img
+
+src="wp2553370.jpg" alt="flag image"
+width="200" height="190">
+</div>
+
+<!-- This will print the text and the picture on the side which
+was changed when it was done with css -->
+
+
+<div class="paragraph">
+<p>
+  I am <Strong> Utsav Patel</strong> studying computer science
+   expected to graduate this year. I came to USA about ten years ago and
+    completed middle school and high school. <br>
+   The goal which I had set for college was to graduate in three years, which I am about to do.
+   Currently, my future goal is to create an IT company after, graduation. Besides,
+   this couple of my hobbies are watching sports and news.
+   I believe that by watching news one can increase their knowledge.
+
+</p>
+
+
+
+<!-- this span tag will change the text color of the selected
+text/till end of the tag -->
+
+<p><span class="color"> One of my favorite quotes is by </span>
+<span class="color1">the Prime Minister of India Narendra Modi</span>
+<q class="color2"><i> I am a small man who wants to do big things for small people.
+  </i>
+</q>
+</p>
+</div>
+
+
+
+<!-- this will align it in center -->
+<div class="aligncenter"  >
+ <h3>Q&A about me
+ </h3>
+</div>
+
+
+
+<!-- this will create a table and show it in a structed manner -->
+
+<table  id="table" class="center">
+  <tr>
+ 	<th>Best Places I've traveled</th>
+
+  </tr>
+
+  <tr>
+    <td>Parliament of India</td>
+  </tr>
+  <tr>
+    <td>Mumbai Police Headquaters</td>
+  </tr>
+  <tr>
+    <td>Akshardham temple</td>
+  </tr>
+  <tr>
+    <td>Atlanta</td>
+  </tr>
+</table>
+
+
+<!--This will include it in an order list which will
+show my hobbies -->
+
+<h4>Hobbies</h4>
+<ol>
+  <li>Reading/watching current stories</li>
+  <li>Yoga</li>
+  <li>Eating</li>
+</ol>
+
+<hr/>
+
+
+
+<div class="backgroundimages">
+
+  <!--This will have the validation image in the
+top right of the box -->
+  <div class="validation">
+  <img
+  src="validation.jpg" alt="w3c">
+  </div>
+
+
+
+<h2>Intresting facts
+  </h2>
+
+<!--The onclick will help activate a function when the element is
+ clicked, which will output a text which is in the p element with
+ the id="state or game".The script tag will point/open other file/text. -->
+<p>Sport that I like to play/watch</p>
+<button  class="tablink" onclick="myFunction()">Click to see
+</button>
+<p
+  id="game">
+</p>
+
+<script>
+function myFunction() {
+  document.getElementById("game").innerHTML = "Cricket";
+}
+
+</script>
+
+
+
+<p>Which state I am from in India?</p>
+<br>
+<button class="tablink" onclick="myFunction1()">Click to see
+</button>
+
+<p
+  id="State">
+</p>
+
+<script>
+function myFunction1() {
+  document.getElementById("State").innerHTML = "Gujarat"
+}
+
+</script>
+<br>
+<!-- this will lead the user to a link to vist -->
+<p><b>Places I would like to vist</b></p>
+<p><a href="https://hippie-inheels.com/best-places-to-visit-in-india-from-five-years-of-exploration/">
+  Vist the link to view</a></p>
+
+
+
+  <!-- this will print the current date and time -->
+  <p id="date"></p>
+  <script>
+  document.getElementById("date").innerHTML = Date();
+  </script>
+  </div>
+</body>
+</html>

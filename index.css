@@ -1,0 +1,172 @@
+/*
+         Email:utsav_patel@student.uml.edu
+           Name: Utsav Patel
+           I am a junior/senoir at Umass Lowell in  91.61 GUI Programming I
+
+           File: weblab.cs.uml.edu/~upatel
+           91.461 Assignment:  Creating Your First Web Page
+           Utsav Patel, UMass Lowell Computer Science, upatel@cs.uml.edu
+           Copyright (c) 2019 by Utsav Patel.  All rights reserved.  May be
+           freely copied or excerpted for educational purposes with credit to
+           the author.
+           updated by UP on October 9th, 2019 at 9:23 AM
+           This website was checked using validator which provided no errors
+*/
+
+
+header, hgroup, nav, footer, figure, figcaption, aside, section, article
+{
+	display: block;
+}
+
+body
+{background-color:powderblue;}
+h1{
+	border: 2px solid Tomato;
+}
+/* The color being white and the background being orange*/
+.header{
+	font-size:25px;
+	background-color: orange;
+  text-align: center;
+	 color: white;
+
+}
+/*this will put all the tabs in the center */
+.tabcontent{
+	text-decoration:none;
+	text-align: center;
+}
+
+
+/*this will give a background color to the tabs
+and padding as well as text-align.
+Also it will print it in inline-block.*/
+a:link {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: underline overline dotted white;
+  display: inline-block;
+}
+a:hover{
+  background-color: purple;
+}
+.image {
+  float: right;
+  width: 20%;
+  padding: 5px;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+
+
+/*this will make the content be in the middle of the images
+and color being green. Also colors were changed in the
+second paragraph.*/
+.paragraph
+{ text-align: center;
+	color:green; }
+.color{
+color:orange;
+}
+.color1{
+color:White;
+}
+.color2{
+	color:green;
+}
+/*This is very important to have the table in center*/
+.center
+{
+	margin-left: auto;
+   margin-right: auto;
+	 width:80%;
+}
+
+
+/*
+th being the table title
+this will create a white border using 2px and a padding of 10px*/
+#table th, #table td {
+
+  border: 2px solid white;
+  padding: 10px;
+}
+
+
+
+/* the text being in center and having orange background color.*/
+#table th {
+  text-align: center;
+  background-color: orange;
+}
+.aligncenter
+{
+	text-align:center;
+}
+
+
+
+/*the table chart will have white color every even
+and will have a gray color if the mouse is hover over it.
+the middle one will have or every odd will have brown.*/
+#table tr:nth-child(2n){background-color: white;}
+
+#table tr:nth-child(2n+1){background-color: brown;}
+
+#table tr:hover {background-color: gray;}
+
+
+
+/*it is important to have life-style as none
+otherwise it give 1-3 numbering since it is an ordered
+list*/
+ol {
+	list-style: none;
+	counter-reset: number;
+}
+
+
+
+/* the bullets to be before the list
+with color being white and the background being blue
+Also to display it in-line block */
+li:before {
+	counter-increment: number;
+	margin-bottom: 5px;
+	content: counter(number);
+	background: blue;
+	color: white;
+	width: 1.9em;
+	display: inline-block;
+}
+
+
+/*this will give the button the color and cursor as well
+as hovering will give them a white color. Also having the background
+image in css style.*/
+.backgroundimages{
+	background-image: url('wp2553370.jpg');
+	width:1110px; height: 450px;border:1px
+	solid black;
+}
+
+.tablink {
+  background-color: gray;
+  color: orange;
+  border: 10px;
+  cursor: pointer;
+}
+.tablink:hover {
+  background-color: white;
+}
+
+.validation{
+	float: right;
+
+}
